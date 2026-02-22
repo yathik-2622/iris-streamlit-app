@@ -18,7 +18,13 @@ df = pd.read_csv("Iris.csv")
 # --------------------------------------------------
 # Streamlit page configuration
 # --------------------------------------------------
-st.set_page_config(page_title="🌸 Iris Flower App", page_icon="🌺", layout="wide")
+# st.set_page_config(page_title="🌸 Iris Flower App", page_icon="🌺", layout="wide")
+st.set_page_config(
+    page_title="Iris Streamlit App | RyStudios",
+    page_icon="logo.png",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 # --------------------------------------------------
 # Sidebar Navigation
@@ -183,16 +189,53 @@ elif page == "📈 Feature Reference":
 # --------------------------------------------------
 # ABOUT PAGE
 # --------------------------------------------------
+# elif page == "ℹ️ About App":
+#     st.title("ℹ️ About This Project")
+#     st.markdown("""
+#     **Model:** Logistic Regression  
+#     **Framework:** Streamlit  
+#     **Dataset:** UCI Iris Dataset  
+
+#     This project demonstrates interactive ML predictions with:
+#     - 📊 Confidence visualization  
+#     - 🎛 Dynamic feature controls  
+#     - 🧠 Real-time species explanation  
+#     """)
+#     st.success("Use the sidebar to explore different sections — no restarts needed 🚀")
+
+# ABOUT PAGE
+# --------------------------------------------------
 elif page == "ℹ️ About App":
     st.title("ℹ️ About This Project")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        **Model:** Logistic Regression  
+        **Framework:** Streamlit  
+        **Dataset:** UCI Iris Dataset  
+        **Deployed:** Streamlit Cloud  
+        """)
+    
+    with col2:
+        st.markdown("""
+        **Built by:** Yathik  
+        **Brand:** RyStudios  
+        **GitHub:** [iris-streamlit-app](https://github.com/yathik-2622/iris-streamlit-app)  
+        **Live:** [rystudios-iris.streamlit.app](https://rystudios-iris.streamlit.app)  
+        """)
+    
+    st.markdown("---")
     st.markdown("""
-    **Model:** Logistic Regression  
-    **Framework:** Streamlit  
-    **Dataset:** UCI Iris Dataset  
-
-    This project demonstrates interactive ML predictions with:
-    - 📊 Confidence visualization  
-    - 🎛 Dynamic feature controls  
-    - 🧠 Real-time species explanation  
+    This app demonstrates end-to-end ML deployment with:
+    - 📊 Real-time confidence visualization
+    - 🎛️ Dynamic feature controls  
+    - 🧠 Live species prediction with explanation
+    - 📈 Interactive scatter plots
+    - 🔬 Model accuracy and confusion matrix
     """)
-    st.success("Use the sidebar to explore different sections — no restarts needed 🚀")
+    st.markdown("---")
+    st.markdown("© 2025 **Yathik** · **RyStudios** — Where Data Meets Design 🎬")
+    
+    st.success("Use the sidebar to explore different sections🚀")
