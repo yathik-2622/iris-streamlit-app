@@ -20,7 +20,7 @@ df = pd.read_csv("Iris.csv")
 # --------------------------------------------------
 # st.set_page_config(page_title="🌸 Iris Flower App", page_icon="🌺", layout="wide")
 st.set_page_config(
-    page_title="Iris Streamlit App | RyStudios",
+    page_title="Iris | RyStudios",
     page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
