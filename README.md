@@ -95,7 +95,7 @@ iris-streamlit-app/
 
 | App | Tech | URL |
 |-----|------|-----|
-| 🌸 Iris Visual AI | FastAPI + Plotly | iris-visual-ai-frontend.vercel.app |
+| 🌸 Iris Visual AI | FastAPI + Plotly | [rystudios-iris-visual.vercel.app](https://rystudios-iris.vercel.app/) |
 | 🌸 Iris Streamlit | Streamlit | [rystudios-iris.streamlit.app](https://rystudios-iris.streamlit.app)|
 
 ---
